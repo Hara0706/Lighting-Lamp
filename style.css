@@ -1,0 +1,206 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.884), rgb(0, 0, 0));
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    transition: background 0.5s;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .menu
+{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .logo
+{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul
+{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    margin: 0 30px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover
+{
+    font-size: 21px;
+    border-radius: 30px;
+    box-shadow: 0 2px 15px rgba(238, 241, 238, 0.815);
+    background: linear-gradient(#a6e46c, #4bdd99);
+}
+
+button
+{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 60px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button span
+{
+    display: block;
+    background: #999;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+.lampco
+{
+    position: absolute;
+    top: -20px ;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.light
+{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.textco
+{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.textco h1
+{
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.textco p
+{
+    font-size: 20px;
+}
+
+.textco a
+{
+    text-decoration: none;
+    background: linear-gradient(#53b885, #16533c);
+    color: #fff;
+    padding: 14px 40px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+
+.textco a:hover
+{
+    padding: 16px 44px;
+    box-shadow: 0 2px 15px rgba(37, 207, 51, 0.815);
+}
+
+.control
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.control .line
+{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+
+.control .line span
+{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    margin-left: -1.5px;
+    border-radius: 4px;
+    background: linear-gradient(#a6e46c, #4bdd99);
+    display: block;
+}
+
+
+.active
+{
+    background: linear-gradient(#a6e46c, #4bdd99);
+}
+
+.active span
+{
+    background: linear-gradient(#63a349, #2aaf3c);
+    margin: 0px 31px;
+}
+
+.on
+{
+     opacity: 1;
+}
+
+.backon
+{
+    background: linear-gradient(rgb(85, 84, 84), rgb(35, 30, 30));
+}
+
+

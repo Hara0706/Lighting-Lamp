@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Glowing Lamp</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Dosis&display=swap">
+</head>
+
+<body>
+    <div class="hero" id = "back">
+        <nav>
+            <img src = "menu.png" class = "menu">
+            <img src = "logo.png" class = "logo">
+            <ul>
+                <li><a href = "#">Latest</a></li>
+                <li><a href = "#">Modern</a></li>
+                <li><a href = "#">Contemporary</a></li>
+                <li><a href = "#">Affordable</a></li>
+            </ul>
+            <button type = "button" onclick = "toggle()" id = "btn"><span></span></button>
+        </nav>
+
+        <div class="lampco">
+            <img src = "lamp.png" class = "lamp">
+            <img src = "light.png" class = "light" id = "light">
+        </div>
+
+        <div class="textco">
+            <h1>Latest <br> In Lighting</h1>
+            <br>
+            <p>This is the first lamp from our company. We are making a huge collection of modern lamps
+                in all categories from home use to office use.
+            </p>
+            <a href = "">Check All Collections</a>
+            <div class="control">
+                <p>Half Bright</p>
+                <div class="line">
+                    <span></span>
+                </div>
+                <p>Full Bright</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        var back = document.getElementById("back");
+        function toggle()
+        {
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+            back.classList.toggle("backon")
+        }
+
+    </script>
+</body>
+
+</html>
